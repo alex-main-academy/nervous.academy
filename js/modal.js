@@ -9,7 +9,7 @@ const handleOpenModal = () => {
         visibility: visible;
     `;
 
-    document.body.style.overflowY = "hidden";
+    // document.body.style.overflowY = "hidden";
 };
 
 const handleCloseModal = () => {
@@ -17,7 +17,7 @@ const handleCloseModal = () => {
         opacity: 0;
         visibility: hidden;
     `;
-    document.body.style.overflowY = "auto";
+    // document.body.style.overflowY = "auto";
 };
 
 openModalButton.addEventListener("click", handleOpenModal);
@@ -64,7 +64,7 @@ form.addEventListener("submit", (event) => {
         })
         .then((data) => {
             console.log(data);
-            window.location.href = "https://edu.nervous.academy/courses/media-buyer-ai-tovarna-vertikal-2-potik-IrT";
+            window.location.href = "https://edu.nervous.academy/courses/media-buyer-ai-tovarna-vertikal-2-potik-IrT/welcome-video";
         })
         .catch((error) => {
             console.error("Произошла ошибка:", error);

@@ -3479,7 +3479,8 @@ body.container-scroll .menu__nav {
 
 @media screen and (max-width:767px) {
     .form__modal {
-        width: 90%;
+        width: 90%; 
+        padding: 15px 30px;
     }
 }
 
@@ -3503,10 +3504,22 @@ body.container-scroll .menu__nav {
     margin-right: 64px;
 }
 
+@media screen and (max-width:767px) {
+    .form__title {
+        font-size: 18px;
+    }
+}
+
 .form__desc {
     font-size: 14px;
     line-height: 1.71;
     margin-bottom: 26px;
+}
+
+@media screen and (max-width:767px) {
+    .form__desc {
+        font-size: 12px;
+    }   
 }
 
 .form__top {
@@ -3519,6 +3532,13 @@ body.container-scroll .menu__nav {
     .form__top {
         flex-direction: column;
     }
+}
+
+@media screen and (max-width:767px) {
+    .form__top {
+        gap: 15px;
+        margin-bottom: 15px;
+    }   
 }
 
 .form__label {
@@ -3572,6 +3592,12 @@ body.container-scroll .menu__nav {
     backdrop-filter: blur(15px);
     color: rgba(226, 198, 84, 0.2);
     cursor: not-allowed;
+}
+
+@media screen and (max-width:767px) {
+    .form__button {
+        margin-top: 0;
+    }   
 }
 
 .form__button_active {
