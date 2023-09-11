@@ -1,0 +1,670 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: inherit;
+    font-family: inherit;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+input::-moz-placeholder {
+    color: inherit;
+}
+
+input::-webkit-input-placeholder {
+    color: inherit;
+}
+
+input:-ms-input-placeholder {
+    color: inherit;
+}
+
+input::-ms-input-placeholder {
+    color: inherit;
+}
+
+input::placeholder {
+    color: inherit;
+}
+
+a {
+    font-family: initial;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../fonts/Comfortaa-Light.ttf");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../fonts/Comfortaa-Regular.ttf");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../fonts/Comfortaa-Medium.ttf');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../fonts/Comfortaa-Bold.ttf");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Medium.ttf");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+:root {
+    --primary-font: 'Comfortaa';
+    --secondary-font: 'Montserrat';
+    --primary-text-color: #FFFFFF;
+    --accent-text-color: #FBE58C;
+    ;
+}
+
+body {
+    position: relative;
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+    letter-spacing: 0.01em;
+    height: 100vh;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 259px;
+    left: -140px;
+    width: 198px;
+    height: 198px;
+    background-color: #AF6E22;
+    -webkit-filter: blur(168.5px);
+    filter: blur(168.5px);
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 98px;
+    left: 650px;
+    width: 81px;
+    height: 81px;
+    background-color: #FF4B5C;
+    -webkit-filter: blur(90.5px);
+    filter: blur(90.5px);
+    z-index: 1;
+}
+
+.tiktok__image {
+    position: absolute;
+    top: 264px;
+    -webkit-animation-name: to-top-animation;
+    animation-name: to-top-animation;
+    -webkit-animation-duration: 3000ms;
+    animation-duration: 3000ms;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.tiktok__image_mobile {
+    display: none;
+    position: absolute;
+    -webkit-animation-name: to-top-animation;
+    animation-name: to-top-animation;
+    -webkit-animation-duration: 3000ms;
+    animation-duration: 3000ms;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes to-top-animation {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes to-top-animation {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.like__image {
+    position: absolute;
+    top: 32px;
+    left: 572px;
+    -webkit-animation-name: to-top-animation;
+    animation-name: to-top-animation;
+    -webkit-animation-duration: 3000ms;
+    animation-duration: 3000ms;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.container {
+    max-width: 1520px;
+    margin-left: 198px;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    padding-top: calc((100vh - 522px) / 2);
+    background-image: url(../img/hero/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+@-webkit-keyframes lights {
+    0% {
+        color: #FFFFFF;
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+    20% {
+        color: #FFFFFF;
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    40% {
+        color: #FFFFFF;
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 90%, 0.5),
+            -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+            0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+
+    70% {
+        color: #FFFFFF;
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    100% {
+        color: #FFFFFF;
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+}
+
+@keyframes lights {
+    0% {
+        color: #FFFFFF;
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+    20% {
+        color: #FFFFFF;
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    40% {
+        color: #FFFFFF;
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 90%, 0.5),
+            -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+            0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+
+    70% {
+        color: #FFFFFF;
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    100% {
+        color: #FFFFFF;
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+}
+
+.hero__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 46px;
+}
+
+.hero__logo_name {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 2;
+    -webkit-animation: lights 5s 750ms linear infinite;
+    animation: lights 5s 750ms linear infinite;
+    color: #FFFFFF;
+}
+
+.hero__date {
+    display: none;
+}
+
+.hero__subtitle {
+    font-size: 22px;
+    line-height: 1.64;
+    margin-bottom: 18px;
+    color: var(--accent-text-color);
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.33;
+    max-width: 788px;
+    margin-bottom: 55px;
+}
+
+.hero__title span {
+    color: var(--accent-text-color);
+    font-family: var(--secondary-font);
+}
+
+.hero__link {
+    display: inline-block;
+    padding: 31px 0;
+    background-color: #4367CE;
+    -webkit-box-shadow: 0px 4px 150px 0px #4467CD;
+    box-shadow: 0px 4px 150px 0px #4467CD;
+    border-radius: 40px 15px;
+    -webkit-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 13px;
+    width: 365px;
+}
+
+.hero__link span {
+    font-size: 22px;
+    line-height: 1;
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+
+.hero__link:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width:1600px) {
+    .container {
+        max-width: 1060px;
+        margin-left: 187px;
+    }
+
+    .hero {
+        padding-top: calc((100vh - 503px) / 2);
+        background-image: url(../img/hero/bg-l.webp);
+    }
+
+    .hero__title {
+        font-size: 41px;
+        line-height: 1.45;
+        margin-bottom: 44px;
+    }
+
+    .hero__subtitle {
+        margin-bottom: 22px;
+    }
+
+    .hero__link {
+        -webkit-box-shadow: 0px 4px 100px 0px #4467CD;
+        box-shadow: 0px 4px 100px 0px #4467CD;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    body::after {
+        top: 370px;
+        left: -160px;
+    }
+
+    body::before {
+        top: 162px;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        transform: translate(-50%);
+    }
+
+    .tiktok__image {
+        top: 666px;
+    }
+
+    .like__image {
+        top: 110px;
+        left: auto;
+        right: 50px
+    }
+
+    .container {
+        max-width: 710px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        padding-top: 77px;
+        background-image: url(../img/hero/bg-s.webp);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero__logo {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-bottom: 105px;
+    }
+
+    .hero__date {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 14px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 27px;
+
+        font-size: 22px;
+        line-height: 1;
+        letter-spacing: 0.22px;
+    }
+
+    .hero__date span {
+        width: 65px;
+        height: 60px;
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        background-image: url(../img/hero/date-bg.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        font-family: var(--secondary-font);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0.2px;
+    }
+
+    .hero__title {
+        text-align: center;
+        font-size: 44px;
+        line-height: 1.36;
+        margin-bottom: 40px;
+    }
+
+    .hero__subtitle {
+        text-align: center;
+        margin: 0 auto 9px auto;
+    }
+
+    .hero__link {
+        padding: 31px 0;
+        width: 461px;
+        text-align: center;
+        margin: 0 auto;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    body::after {
+        top: 148px;
+        left: -124px;
+    }
+
+    body::before {
+        top: 88px;
+        right: -14px;
+    }
+
+    .tiktok__image {
+        display: none;
+    }
+
+    .tiktok__image_mobile {
+        display: block;
+        top: 540px;
+        left: calc((320px - 114px) / 2);
+        -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        transform: translate(-50%);
+    }
+
+    .like__image {
+        width: 115px;
+        top: 68px;
+        right: 32px;
+    }
+
+    .container {
+        max-width: 320px;
+        position: relative;
+    }
+
+    .hero {
+        padding-top: 32px;
+        background-image: url(../img/hero/bg-s.webp);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero__logo {
+        margin-bottom: 58px;
+    }
+
+    .hero__logo_name {
+        font-size: 24px;
+        line-height: 2.5;
+    }
+
+    .hero__date {
+        margin-bottom: 19px;
+    }
+
+    .hero__title {
+        font-size: 27px;
+        line-height: 1.46;
+        margin-bottom: 23px;
+    }
+
+    .hero__subtitle {
+        font-size: 22px;
+        line-height: 1.63;
+        margin-bottom: 9px;
+    }
+
+    .hero__link {
+        width: 100%;
+        padding: 30px 0;
+    }
+}

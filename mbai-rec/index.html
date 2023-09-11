@@ -1,0 +1,1322 @@
+<?php 
+    $utm_source = $_GET['utm_source'];
+    $utm_medium = $_GET['utm_medium'];
+    $utm_campaign = $_GET['utm_campaign'];
+    $utm_link = "utm_source=$utm_source&utm_medium=$utm_medium&utm_campaign=$utm_campaign";
+?>
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <!-- base meta-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TurnKey">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TG8947W');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTFN5KQSQF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RTFN5KQSQF');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- open graph -->
+    <meta name="description" content='Media Buyer + AI “товарна вертикаль”'>
+    <meta name="keywords" content="">
+    <meta property="og:description" content='Media Buyer + AI “товарна вертикаль”'>
+    <meta property="og:image" content="https://nervous.academy/mbai-rec/img/fb_img.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+    <meta property="og:site_name" content="nervous.academy/mbai-rec">
+    <meta property="og:title" content='Media Buyer + AI “товарна вертикаль”'>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nervous.academy/mbai-rec">
+    <!-- disable link highlighting upon tap-->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- theme Color for Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#212121">
+    <!-- title-->
+    <title>Media Buyer + AI “товарна вертикаль”</title>
+    <!-- favicon-->
+    <!-- link(rel='icon', type='image/png', href='img/favicon.png')-->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <!-- <link rel="apple-touch-icon" sizes="any" type="image/png" href="img/favicon/favicon.png"> -->
+    <link rel="icon" sizes="any" type="image/svg+xml" href="img/favicon/favicon.svg">
+    <!-- link(rel='icon' type='image/x-icon' href='img/favicon/favicon.ico') -->
+    <!-- empty favicon-->
+    <!-- link(rel='icon' href='data:,')-->
+    <!-- css-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.8/build/player/lottie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+</head>
+
+<body class="is-visit">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG8947W" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- the same in scss-->
+    <div class="menu-btn">
+        <button class="menu-btn__toggler" id="toggler">
+            <svg width="37" height="13" viewBox="0 0 37 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 2C0 0.895431 0.89543 0 2 0H35C36.1046 0 37 0.895431 37 2C37 3.10457 36.1046 4 35 4H2C0.895432 4 0 3.10457 0 2Z"
+                    fill="white"></path>
+                <path
+                    d="M15 11C15 9.89543 15.8954 9 17 9H35C36.1046 9 37 9.89543 37 11C37 12.1046 36.1046 13 35 13H17C15.8954 13 15 12.1046 15 11Z"
+                    fill="white"></path>
+            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0.514323 0.514327C1.20009 -0.171442 2.31193 -0.171442 2.99769 0.514327L23.4855 21.0023C24.1713 21.6881 24.1713 22.7999 23.4855 23.4857C22.7997 24.1714 21.6879 24.1714 21.0021 23.4857L0.514323 2.99772C-0.171441 2.31195 -0.171441 1.2001 0.514323 0.514327Z"
+                    fill="white"></path>
+                <path
+                    d="M23.4857 0.514327C22.7999 -0.171442 21.6881 -0.171442 21.0023 0.514327L0.514493 21.0023C-0.171271 21.6881 -0.171271 22.7999 0.514493 23.4857C1.20026 24.1714 2.3121 24.1714 2.99786 23.4857L23.4857 2.99772C24.1714 2.31195 24.1714 1.2001 23.4857 0.514327Z"
+                    fill="white"></path>
+            </svg>
+        </button>
+    </div>
+    <button class="logo" id="logo">
+        <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M22.1628 16.9174C21.5349 16.9174 20.9884 16.677 20.5233 16.1962C20.0814 15.7153 19.8605 15.1429 19.8605 14.4789V3.45377C19.8605 2.76684 20.0814 2.18296 20.5233 1.70211C20.9651 1.22127 21.5116 0.980845 22.1628 0.980845C22.814 0.980845 23.3605 1.22127 23.8023 1.70211C24.2442 2.18296 24.4651 2.76684 24.4651 3.45377L24.5 14.4789C24.5 15.1429 24.2674 15.7153 23.8023 16.1962C23.3605 16.677 22.814 16.9174 22.1628 16.9174ZM22.6163 25.6413C22.1047 26.0077 21.593 26.1909 21.0814 26.1909C20.3837 26.1909 19.7093 25.8474 19.0581 25.1605L8.83721 8.57133C8.02326 7.24328 7.2907 6.57926 6.63954 6.57926C5.82558 6.57926 5.43023 7.58675 5.45349 9.60172V24.0271C5.45349 25.6757 4.65116 26.5 3.04651 26.5C2.30233 26.5 1.68605 26.2825 1.19767 25.8474C0.732558 25.3895 0.5 24.7827 0.5 24.0271V6.02972C0.5 4.38111 1.17442 3.01871 2.52326 1.94254C3.73256 0.980845 5.13954 0.5 6.74419 0.5C8.5814 0.5 9.89535 1.14113 10.686 2.42338L23.0349 21.932C23.4302 22.5502 23.6279 23.1455 23.6279 23.718C23.6279 24.4965 23.2907 25.1376 22.6163 25.6413Z"
+                fill="white"></path>
+        </svg>
+    </button>
+    <div class="menu">
+        <nav class="menu__nav">
+            <ul class="ul menu__list menuList">
+                <li class="menu__item is-active" data-section="1" data-id="about">
+                    <button>Головна</button>
+                </li>
+                <li class="menu__item" data-section="2" data-id="do">
+                    <button>Ви отримаєте</button>
+                </li>
+                <li class="menu__item" data-section="3" data-id="get">
+                    <button>Переваги</button>
+                </li>
+                <li class="menu__item" data-section="4" data-id="timlids">
+                    <button>Спікери</button>
+                </li>
+                <li class="menu__item" data-section="5" data-id="workshop">
+                    <button>Програма</button>
+                </li>
+                <li class="menu__item" data-section="6" data-id="meet">
+                    <button>Кар’єра</button>
+                </li>
+                <li class="menu__item" data-section="7" data-id="reviews">
+                    <button>Відгуки</button>
+                </li>
+                <li class="menu__item" data-section="8" data-id="pay">
+                    <button>Оплата</button>
+                </li>
+                <li class="menu__item" data-section="9" data-id="partners"><button>Партнери</button></li>
+                <li class="menu__item" data-section="10" data-id="faq">
+                    <button>FAQ</button>
+                </li>
+                <li class="menu__planet">
+                    <picture class="menu__planet-pic">
+                        <source srcset="img/components/menu/img/planet.webp" media="(min-width: 1200px)" width="400">
+                        <img src="img/empty.svg" alt="">
+                    </picture>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav" id="nav">
+        <div class="nav__btns">
+            <button class="nav__btn prevSection is-hide"><i class="nav__btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.0835 4.16634L12.9168 9.99967L7.0835 15.833" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></i><span>Назад</span></button>
+            <button class="nav__btn nextSection"><span>Далі</span><i class="nav__btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.0835 4.16634L12.9168 9.99967L7.0835 15.833" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></i></button>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress__bar" id="progress">
+            <div class="progress__fill"></div>
+        </div>
+    </div>
+    <main class="main">
+        <section class="section about is-active" id="about">
+            <picture class="section__pic">
+                <source srcset="img/sections/home/bg.webp" media="(min-width: 1440px)">
+                <source srcset="img/sections/home/bg-l.webp" media="(min-width: 1200px)">
+                <source srcset="img/sections/home/bg-m.webp" media="(min-width: 768px)"><img class="section__pic-img"
+                    src="img/sections/home/bg-s.webp" alt="">
+            </picture>
+            <div class="container">
+                <header class="about__header">
+                    <div class="anim-text">
+                        <h1 class="title anim-text__wrap anim-delay-14 anim-scroll">Media Buyer + AI “товарна вертикаль”
+                        </h1>
+                    </div>
+                    <div class="anim-text">
+                        <p class="about__desc anim-text__wrap anim-delay-15 anim-scroll">
+                            Пройди шлях від теорії до результату і переконайся, що вже через 2-3 тижні впевнено зможеш
+                            працювати у білій товарці.
+                        </p>
+                    </div>
+                </header>
+                <div class="box box--ellipse anim-box anim-delay-16 anim-scroll">
+                    <div class="anim-text">
+                        <h2 class="title anim-text__wrap anim-delay-17 anim-scroll">Що отримаєш?</h2>
+                    </div>
+                    <ul class="ul about__list">
+                        <li class="anim-text">
+                            <div class="about__item anim-text__wrap anim-delay-18 anim-scroll"><span
+                                    class="about__number">01</span>
+                                <div>
+                                    <p class="about__text">Топову базу знань</p>
+                                    <p class="about__text">Теорія та багато практики</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="anim-text">
+                            <div class="about__item anim-text__wrap anim-delay-19 anim-scroll"><span
+                                    class="about__number">02</span>
+                                <div>
+                                    <p class="about__text">Сучасні навички для роботи</p>
+                                    <p class="about__text">Інструменти, фішки, лайф-хаки</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="anim-text">
+                            <div class="about__item anim-text__wrap anim-delay-20 anim-scroll"><span
+                                    class="about__number">03</span>
+                                <div>
+                                    <p class="about__text">Гнучкість</p>
+                                    <p class="about__text">Обирай самостійно віддалений графік навчання</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="anim-text">
+                            <div class="about__item anim-text__wrap anim-delay-21 anim-scroll"><span
+                                    class="about__number">04</span>
+                                <div>
+                                    <p class="about__text">Результат</p>
+                                    <p class="about__text">Почни заробляти Медіабаєром після отриманих знань</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section do" id="do">
+            <picture class="section__pic">
+                <source srcset="img/sections/do/bg.webp" media="(min-width: 1440px)">
+                <source srcset="img/sections/do/bg-l.webp" media="(min-width: 1200px)">
+                <source srcset="img/sections/do/bg-m.webp" media="(min-width: 768px)"><img class="section__pic-img"
+                    src="img/sections/do/bg-s.webp" alt="">
+            </picture>
+            <div class="container">
+                <img src="./img/decoration-line.png" alt="decoration-line" class="do__decoration decoration">
+                <header class="do__header">
+                    <div class="anim-text">
+                        <h2 class="title anim-text__wrap anim-delay-5 anim-scroll">Ви отримаєте</h2>
+                    </div>
+                </header>
+                <ul class="ul section__list">
+                    <li class="anim-text">
+                        <div class="section__list-item anim-text__wrap anim-delay-6 anim-scroll">Налаштовувати рекламні
+                            компанії у Meta Ads</div>
+                    </li>
+                    <li class="anim-text">
+                        <div class="section__list-item anim-text__wrap anim-delay-7 anim-scroll">Заробляти на CPA та
+                            дропшиппінг-платформах</div>
+                    </li>
+                    <li class="anim-text">
+                        <div class="section__list-item anim-text__wrap anim-delay-8 anim-scroll">Впевнено працювати в
+                            “білому” digital-секторі</div>
+                    </li>
+                    <li class="anim-text">
+                        <div class="section__list-item anim-text__wrap anim-delay-9 anim-scroll">Стратегічно
+                            вибудовувати концепцію гри на довгу дистанцію</div>
+                    </li>
+                    <li class="anim-text">
+                        <div class="section__list-item anim-text__wrap anim-delay-9 anim-scroll">Працювати з AI. З його
+                            допомогою зможеш робити такий крутий візуал для креативів, який ти зараз бачиш на сайті
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section get" id="get">
+            <picture class="section__pic">
+                <source srcset="img/sections/get/bg.webp" media="(min-width: 1440px)">
+                <source srcset="img/sections/get/bg-l.webp" media="(min-width: 1200px)">
+                <source srcset="img/sections/get/bg-m.webp" media="(min-width: 768px)"><img class="section__pic-img"
+                    src="img/sections/get/bg-s.webp" alt="">
+            </picture>
+            <div class="container">
+                <img src="./img/decoration-line.png" alt="decoration-line" class="get__decoration decoration">
+                <header class="get__header">
+                    <div class="anim-text">
+                        <h2 class="title anim-text__wrap anim-delay-2 anim-scroll">Переваги навчання у Nervous Academy
+                        </h2>
+                    </div>
+                </header>
+                <ul class="get__list">
+                    <li class="get__item anim-box anim-delay-4 anim-scroll">
+                        <img src="img/sections/get/bag.svg" alt="bag" class="get__icon" width="48" height="48">
+                        <h3 class="get__subtitle">Можливість потрапити у команду</h3>
+                    </li>
+                    <li class="get__item anim-box anim-delay-6 anim-scroll">
+                        <img src="img/sections/get/calc.svg" alt="calendar" class="get__icon" width="48" height="48">
+                        <h3 class="get__subtitle">Обирай тип та графік навчання</h3>
+                    </li>
+                    <li class="get__item anim-box anim-delay-8 anim-scroll">
+                        <img src="img/sections/get/gift.svg" alt="gift" class="get__icon" width="48" height="48">
+                        <h3 class="get__subtitle">Під час навчання студентів очікує безліч бонусів</h3>
+                    </li>
+                    <li class="get__item anim-box anim-delay-10 anim-scroll">
+                        <img src="img/sections/get/star.svg" alt="star" class="get__icon" width="48" height="48">
+                        <h3 class="get__subtitle">Безкоштовний семестр навчання за успіхи (1 місяць)</h3>
+                    </li>
+                    <li class="get__item anim-box anim-delay-12 anim-scroll">
+                        <img src="img/sections/get/wallet.svg" alt="wallet" class="get__icon" width="48" height="48">
+                        <h3 class="get__subtitle">Повернення коштів при умові, якщо ти наш Медіабаєр</h3>
+                    </li>
+                    <li class="get__item anim-box anim-delay-14 anim-scroll">
+                        <img src="img/sections/get/person.svg" alt="person" class="get__icon" width="48" height="48">
+                        <h3 class="get__subtitle">Щоденна підтримка наших студентів і якісний фідбек</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section timlids" id="timlids">
+            <picture class="section__pic">
+                <source srcset="img/sections/timlids/bg.webp" media="(min-width: 1440px)">
+                <source srcset="img/sections/timlids/bg-l.webp" media="(min-width: 1200px)">
+                <source srcset="img/sections/timlids/bg-m.webp" media="(min-width: 768px)"><img class="section__pic-img"
+                    src="img/sections/timlids/bg-s.webp" alt="">
+            </picture>
+            <div class="container">
+                <img src="img/decoration-line.png" alt="decoration-line" class="timlids__decoration decoration">
+                <div class="box box--ellipse anim-box anim-delay-5 anim-scroll">
+                    <div class="anim-text">
+                        <h2 class="title anim-text__wrap anim-delay-6 anim-scroll">Спікери</h2>
+                    </div>
+                    <div class="anim-text">
+                        <p class="timlids__text anim-text__wrap anim-delay-7 anim-scroll">Під час курсу ти будеш
+                            працювати зі спікерами, які керують командами медіабаєрів. Наші спеціалісти зроблять з тебе
+                            крутого Медіабаєра!
+                        </p>
+                    </div>
+                </div>
+                <div class="timlids__grid">
+                    <!-- item-->
+                    <div class="timlids__item anim-box-left anim-delay-8 anim-scroll">
+                        <div class="timlids__item-user">
+                            <div class="timlids__item-inner"><img src="img/sections/timlids/user-1.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="timlids__item-info">
+                            <p class="timlids__item-name">Юлія</p>
+                            <p class="timlids__item-desc">Практикуюча арбітражниця з досвідом понад 2 роки. Експерт у
+                                білій товарці
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item-->
+                    <div class="timlids__item anim-box-right anim-delay-8 anim-scroll">
+                        <div class="timlids__item-user">
+                            <div class="timlids__item-inner"><img src="img/sections/timlids/user-2.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="timlids__item-info">
+                            <p class="timlids__item-name">Олег</p>
+                            <p class="timlids__item-desc">CPA marketing / Project manager, PPC-фахівець (Meta Ads,
+                                TikTok ads)</p>
+                        </div>
+                    </div>
+                    <!-- item-->
+                    <div class="timlids__item anim-box-right anim-delay-8 anim-scroll">
+                        <div class="timlids__item-user">
+                            <div class="timlids__item-inner"><img src="img/sections/timlids/user-3.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="timlids__item-info">
+                            <p class="timlids__item-name">Іван</p>
+                            <p class="timlids__item-desc">Тимлід. Арбітражник у білій товарці. Досвід 5 років (Meta Ads,
+                                TikTok Ads)
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item-->
+                    <div class="timlids__item anim-box-right anim-delay-8 anim-scroll">
+                        <div class="timlids__item-user">
+                            <div class="timlids__item-inner"><img src="img/sections/timlids/user-4.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="timlids__item-info">
+                            <p class="timlids__item-name">Стас</p>
+                            <p class="timlids__item-desc">Team Lead Media Buyer (Sweepstakes, 1+ year)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section workshop" id="workshop">
+            <picture class="section__pic">
+                <source srcset="img/sections/programm/bg.webp" media="(min-width: 1440px)">
+                <source srcset="img/sections/programm/bg-l.webp" media="(min-width: 1200px)">
+                <source srcset="img/sections/programm/img/bg-m.webp" media="(min-width: 768px)"><img
+                    class="section__pic-img" src="img/sections/programm/bg-s.webp" alt="">
+            </picture>
+            <div class="container">
+                <img src="./img/decoration-line.png" alt="decoration-line" class="workshop__decoration decoration">
+                <div class="workshop__program">
+                    <div class="anim-text">
+                        <h2 class="title anim-text__wrap anim-delay-8 anim-scroll">Програма курсу</h2>
+                    </div>
+                </div>
+                <div class="workshop__wrap" id="workshopWrap">
+                    <!-- grid-->
+                    <div class="workshop__grid workshopGrid">
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item ltradius-important square anim-box-left anim-delay-8 anim-scroll">
+                            <h3 class="workshop__grid-title">Вступ</h3>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item btradius brradius bias-left anim-box-right anim-delay-8 anim-scroll">
+                            <ul class="workshop__program-list">
+                                <li>
+                                    <p>- Що таке Арбітраж</p>
+                                </li>
+                                <li>
+                                    <p>- Види оплат у партнерських програмах: CPA, DROP. Кейси</p>
+                                </li>
+                                <li>
+                                    <p>- Вертикалі</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- item-->
+                        <div class="workshop__grid-item igrid bias-left anim-box-right anim-delay-8 anim-scroll">
+                            <div class="workshop__grid-inner ltradius"><img src="img/sections/programm/hat.png" alt="">
+                            </div>
+                            <div class="workshop__grid-inner btradius"><img src="img/sections/programm/book.png" alt="">
+                            </div>
+                        </div>
+                        <!-- item-->
+                        <div class="workshop__grid-item ltradius bias-right anim-box-left anim-delay-8 anim-scroll">
+                            <ul class="workshop__program-list">
+                                <li>
+                                    <p>- Перелік джерел, плюси та мінуси</p>
+                                </li>
+                                <li>
+                                    <p>- Абревіатури</p>
+                                </li>
+                                <li>
+                                    <p>- Огляд інструментів Фейсбук для запуску реклами</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- mobile button-->
+                        <button class="workshop__btn" id="workshopBtnShow">
+                            <div class="workshop__btn-inner"><span>Програма воркшопу</span><i
+                                    class="workshop__btn-icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.8332 7.08301L9.99984 12.9163L4.1665 7.08301" stroke="#5378D8"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg></i></div>
+                        </button>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item btradius square flex-end anim-box-right anim-delay-8 anim-scroll">
+                            <p>- Антидетекти. Короткі огляди мультилогіна, дельфіна</p>
+                        </div>
+                        <!-- item-->
+                        <div class="workshop__grid-item igrid bias-right anim-box-right anim-delay-8 anim-scroll">
+                            <div class="workshop__grid-inner ltradius"><img src="img/sections/programm/tag-key.png"
+                                    alt=""></div>
+                            <div class="workshop__grid-inner btradius"><img src="img/sections/programm/keys.png" alt="">
+                            </div>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item ltradius square anim-scroll anim-scroll-container anim-box-left-scroll">
+                            <h3 class="workshop__grid-title">Витратники</h3>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item btradius bias-left anim-scroll anim-scroll-container anim-box-right-scroll">
+                            <ul class="workshop__program-list">
+                                <li>
+                                    <p>- Обліковий запис</p>
+                                </li>
+                                <li>
+                                    <p>- Бізнес-менеджер. Купівля.</p>
+                                </li>
+                                <li>
+                                    <p>- Фан Пейдж</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item igrid bias-left anim-scroll anim-scroll-container anim-box-right-scroll">
+                            <div class="workshop__grid-inner ltradius"><img src="img/sections/programm/gallery.png"
+                                    alt="">
+                            </div>
+                            <div class="workshop__grid-inner btradius"><img src="img/sections/programm/user.png" alt="">
+                            </div>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item ltradius square-full anim-scroll anim-scroll-container anim-box-left-scroll">
+                            <ul class="workshop__program-list">
+                                <li>
+                                    <p>- Домен. Вибір та купівля</p>
+                                </li>
+                                <li>
+                                    <p>- Авторег. Принцип роботи на Авторезі.</p>
+                                </li>
+                                <li>
+                                    <p>Постачальники</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item btradius square-full anim-scroll anim-scroll-container anim-box-right-scroll">
+                            <p>- Кредитна карта</p>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item ltradius bias-right anim-scroll anim-scroll-container anim-box-left-scroll">
+                            <h3 class="workshop__grid-title">Вибір і аналіз оффера</h3>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item btradius square flex-end anim-scroll anim-scroll-container anim-box-right-scroll">
+                            <ul class="workshop__program-list">
+                                <li>
+                                    <p>- Огляд партнерської платформи </p>
+                                </li>
+                                <li>
+                                    <p>- Принципи вибору оффера на платформі</p>
+                                </li>
+                                <li>
+                                    <p>- Менеджер партнерської платформи (приклад взаємодії з менеджером)</p>
+                                </li>
+                                <li>
+                                    <p>- Аналіз оффера з конкурентів</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item igrid bias-right anim-scroll anim-scroll-container anim-box-left-scroll">
+                            <div class="workshop__grid-inner ltradius"><img src="img/sections/programm/diagram.png"
+                                    alt=""></div>
+                            <div class="workshop__grid-inner btradius"><img src="img/sections/programm/percent.png"
+                                    alt=""></div>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item ltradius square blradius anim-scroll anim-scroll-container anim-box-left-scroll">
+                            <h3 class="workshop__grid-title">Що таке зв'язка</h3>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item btradius bias-left anim-scroll anim-scroll-container anim-box-right-scroll">
+                            <h3 class="workshop__grid-title">Креатив</h3>
+                        </div>
+                        <!-- item-->
+                        <div
+                            class="workshop__grid-item igrid bias-left anim-scroll anim-scroll-container anim-box-right-scroll">
+                            <div class="workshop__grid-inner ltradius"><img src="img/sections/programm/lamp.png" alt="">
+                            </div>
+                            <div class="workshop__grid-inner btradius"><img src="img/sections/programm/clip.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="workshopHide">
+                        <!-- grid-->
+                        <div class="workshop__grid">
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item ltradius-important bias-right anim-scroll anim-scroll-container anim-box-left-scroll">
+                                <h3 class="workshop__grid-title">Текст оголошення</h3>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item btradius rtradius square flex-end anim-scroll anim-scroll-container anim-box-right-scroll">
+                                <ul class="workshop__program-list">
+                                    <li>
+                                        <p>- Напрацьовані правила</p>
+                                    </li>
+                                    <li>
+                                        <p>- Типи робочих текстів</p>
+                                    </li>
+                                    <li>
+                                        <p>- Текст заголовка</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item igrid bias-right anim-scroll anim-scroll-container anim-box-left-scroll">
+                                <div class="workshop__grid-inner ltradius"><img src="img/sections/programm/text.png"
+                                        alt=""></div>
+                                <div class="workshop__grid-inner btradius"><img src="img/sections/programm/list.png"
+                                        alt=""></div>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item ltradius square anim-scroll anim-scroll-container anim-box-left-scroll">
+                                <ul class="workshop__program-list">
+                                    <li>
+                                        <p>- Чек-лист для перевірки лендінгу, правки</p>
+                                    </li>
+                                    <li>
+                                        <p>- Огляд на платформі</p>
+                                    </li>
+                                    <li>
+                                        <p>- Додаткові можливості</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item btradius bias-left anim-scroll anim-scroll-container anim-box-right-scroll">
+                                <h3 class="workshop__grid-title">Вибір лендінгу</h3>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item igrid bias-left anim-scroll anim-scroll-container anim-box-right-scroll">
+                                <div class="workshop__grid-inner ltradius"><img src="img/sections/programm/blog.png"
+                                        alt=""></div>
+                                <div class="workshop__grid-inner btradius"><img src="img/sections/programm/voice.png"
+                                        alt=""></div>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item ltradius bias-right anim-scroll anim-scroll-container anim-box-left-scroll">
+                                <h3 class="workshop__grid-title">Рекомендація щодо обліку запусків та їх результатів у
+                                    гугл таблиці</h3>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item btradius square flex-end anim-scroll anim-scroll-container anim-box-right-scroll">
+                                <h3 class="workshop__grid-title">Створення потоку на партнерській платформі, тестова
+                                    заявка</h3>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item igrid bias-right anim-scroll anim-scroll-container anim-box-left-scroll">
+                                <div class="workshop__grid-inner ltradius"><img src="img/sections/programm/website.png"
+                                        alt="">
+                                </div>
+                                <div class="workshop__grid-inner btradius"><img src="img/sections/programm/tag.png"
+                                        alt=""></div>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item ltradius square anim-scroll anim-scroll-container anim-box-left-scroll">
+                                <h3 class="workshop__grid-title">Запуск реклами на Авторезі</h3>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item btradius bias-left anim-scroll anim-scroll-container anim-box-right-scroll">
+                                <h3 class="workshop__grid-title">Що таке трекер. Огляд повноважень Кейтаро</h3>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item igrid bias-left anim-scroll anim-scroll-container anim-box-right-scroll">
+                                <div class="workshop__grid-inner ltradius"><img
+                                        src="img/sections/programm/microphone.png" alt="">
+                                </div>
+                                <div class="workshop__grid-inner btradius"><img src="img/sections/programm/table.png"
+                                        alt=""></div>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item ltradius bias-right anim-scroll anim-scroll-container anim-box-left-scroll">
+                                <ul class="workshop__program-list">
+                                    <li>
+                                        <p>- Структура Рекламної кампанії, рівні та налаштування</p>
+                                    </li>
+                                    <li>
+                                        <p>- Можливі варіанти схем запуску</p>
+                                    </li>
+                                    <li>
+                                        <p>- Запуск на авторезі прогрівання ФП</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item btradius square flex-end anim-scroll anim-scroll-container anim-box-right-scroll">
+                                <ul class="workshop__program-list">
+                                    <li>
+                                        <p>- Боротьба з трешем</p>
+                                    </li>
+                                    <li>
+                                        <p>- Запуск на авторезі 1 кампанія - 2 групи - 3 оголошення</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item igrid bias-right anim-scroll anim-scroll-container anim-box-right-scroll">
+                                <div class="workshop__grid-inner ltradius"><img src="img/sections/programm/price.png"
+                                        alt=""></div>
+                                <div class="workshop__grid-inner btradius"><img
+                                        src="img/sections/programm/microsite.png" alt="">
+                                </div>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item ltradius square anim-scroll anim-scroll-container anim-box-left-scroll">
+                                <h3 class="workshop__grid-title">Робота з відгуками та негативом. Мотивація.
+                                    Напрацювання з цього офферу
+                                </h3>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item btradius bias-left anim-scroll anim-scroll-container anim-box-right-scroll">
+                                <h3 class="workshop__grid-title">Види блокувань. Паблік для пошуку рішень</h3>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item igrid bias-left anim-scroll anim-scroll-container anim-box-right-scroll">
+                                <div class="workshop__grid-inner ltradius"><img src="img/sections/programm/block.png"
+                                        alt="">
+                                </div>
+                                <div class="workshop__grid-inner btradius"><img src="img/sections/programm/star.png"
+                                        alt="">
+                                </div>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item ltradius bias-right anim-scroll anim-scroll-container anim-box-left-scroll">
+                                <h3 class="workshop__grid-title">Аналіз реклами</h3>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item btradius square flex-end anim-scroll anim-scroll-container anim-box-right-scroll">
+                                <h3 class="workshop__grid-title">Методи масштабування</h3>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item igrid bias-right anim-scroll anim-scroll-container anim-box-left-scroll">
+                                <div class="workshop__grid-inner ltradius"><img src="img/sections/programm/player.png"
+                                        alt="">
+                                </div>
+                                <div class="workshop__grid-inner btradius"><img src="img/sections/programm/network.png"
+                                        alt="">
+                                </div>
+                            </div>
+                            <!-- item-->
+                            <div
+                                class="workshop__grid-item btradius trastradius full-item anim-scroll anim-scroll-container anim-box-bottom-scroll">
+                                <h3 class="workshop__grid-title">Трастові акаунти. Переваги роботи. Кейси (приклади
+                                    чинних
+                                    кампаній-довгожителів та розрахунок прибутку з цих кампаній)</h3>
+                            </div>
+                            <!-- empty block 2rem -->
+                            <div class="workshop__empty"></div>
+                        </div>
+                    </div>
+                    <!-- mobile button-->
+                    <button class="workshop__btn" id="workshopBtnHide"><span>Згорнути програму</span></button>
+                    <div class="buttons buttons--hidden"><a class="btn js-go-to-pay">
+                            <span>Купити запис</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section meet" id="meet">
+            <picture class="section__pic">
+                <source srcset="img/sections/career/bg.webp" media="(min-width: 1440px)">
+                <source srcset="img/sections/career/bg-l.webp" media="(min-width: 1200px)">
+                <source srcset="img/sections/career/bg-m.webp" media="(min-width: 768px)"><img class="section__pic-img"
+                    src="img/sections/career//bg-s.webp" alt="">
+            </picture>
+            <div class="container">
+                <img src="./img/decoration-line.png" alt="decoration-line" class="meet__decoration decoration">
+                <header class="meet__header">
+                    <div class="anim-text">
+                        <h2 class="title anim-text__wrap anim-delay-5 anim-scroll">Скільки ти будеш заробляти?</h2>
+                    </div>
+                </header>
+                <div class="meet__info anim-box anim-delay-6 anim-scroll">
+                    <div class="meet__platform"><img src="img/sections/career/money.png" alt=""></div>
+                    <div class="meet__date">
+                        <div class="meet__date-info"><span class="meet__date-period">Без досвіду </span><span>$ 500 -
+                                1500 <span class="meet__date-period">/ місяць</span></span></div>
+                        <div class="meet__date-info"><span class="meet__date-period">З досвідом </span><span>$ 1500
+                                - 4000
+                                <span class="meet__date-period">/ місяць</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box anim-box anim-delay-7 anim-scroll">
+                    <div class="anim-text">
+                        <p class="meet__text anim-text__wrap anim-delay-8 anim-scroll">
+                            І це лише середня цифра! Прибуток Медіабаєра у білій товарній вертикалі залежить від його
+                            досвіду та скіллів. Велике значення має час, який приділяєш роботі та своєму професійному
+                            розвитку.
+                        </p>
+                    </div>
+                </div>
+                <div class="anim-box anim-delay-9 anim-scroll">
+                    <a class="btn js-go-to-pay">
+                        <span>Купити запис</span>
+                    </a>
+                    <img src="./img/decoration-line.png" alt="decoration-line"
+                        class="meet__decoration-bottom decoration">
+                </div>
+            </div>
+        </section>
+        <section class="section reviews" id="reviews">
+            <picture class="section__pic">
+                <source srcset="img/sections/reviews/bg.webp" media="(min-width: 1440px)">
+                <source srcset="img/sections/reviews/bg-l.webp" media="(min-width: 1200px)">
+                <source srcset="img/sections/reviews/bg-m.webp" media="(min-width: 768px)"><img class="section__pic-img"
+                    src="img/sections/reviews/bg-m.webp" alt="">
+            </picture>
+            <div class="container">
+                <img src="./img/decoration-line.png" alt="decoration-line" class="meet__decoration decoration">
+                <header class="meet__header">
+                    <div>
+                        <h2 class="title reviews__title anim-box anim-text__wrap anim-delay-2 anim-scroll">Всі відгуки
+                            реальні
+                            <a class="reviews__button js-go-to-pay">Купити
+                                запис</a>
+                        </h2>
+                        <p class="reviews__desc anim-box anim-text__wrap anim-delay-3 anim-scroll">
+                            * Посилання на соцмережу є під кожним відгуком студента
+                        </p>
+                    </div>
+                </header>
+                <div class="slider reviews__slider anim-box anim-delay-4 anim-scroll">
+                    <div class="slide slider__slide slide__first anim-box anim-delay-4">
+                        <button class="slide__play js-play-button">
+                            <img src="img/sections/reviews/play-icon.svg" alt="" width="43" height="43">
+                        </button>
+                        <div class="video__wrapper">
+                            <video class="slide__video js-first-rev-video" src="video/rev1.mp4"></video>
+                        </div>
+                        <p class="slide__name js-video-name">Учні</p>
+                    </div>
+                    <div class="slide slider__slide slide__second anim-box anim-delay-6">
+                        <button class="slide__play js-play-button">
+                            <img src="img/sections/reviews/play-icon.svg" alt="" width="43" height="43">
+                        </button>
+                        <div class="video__wrapper">
+                            <video class="slide__video js-second-rev-video" src="video/rev2.mp4"></video>
+                        </div>
+                        <p class="slide__name js-video-name">Аліна</p>
+                        <a href="https://short.nervous.academy/qCWkkn" target="_blank" class="slide__link">
+                            <span class="link__facebook">...переглянути в</span>
+                            <img src="img/sections/reviews/facebook-logo.svg" alt="" width="14" height="14">
+                        </a>
+                    </div>
+                    <div class="slide slider__slide slide__third anim-box anim-delay-8">
+                        <button class="slide__play js-play-button">
+                            <img src="img/sections/reviews/play-icon.svg" alt="" width="43" height="43">
+                        </button>
+                        <div class="video__wrapper">
+                            <video class="slide__video js-third-rev-video" src="video/rev3.mp4"></video>
+                        </div>
+                        <p class="slide__name js-video-name">Роман</p>
+                        <a href="https://short.nervous.academy/AXO1Ju" target="_blank" class="slide__link">
+                            <span class="link__facebook">...переглянути в</span>
+                            <img src="img/sections/reviews/facebook-logo.svg" alt="" width="13" height="13">
+                        </a>
+                    </div>
+                    <div class="slide slider__slide slide__fourth anim-box anim-delay-10">
+                        <button class="slide__play js-play-button">
+                            <img src="img/sections/reviews/play-icon.svg" alt="" width="43" height="43">
+                        </button>
+                        <div class="video__wrapper">
+                            <video class="slide__video js-fourth-rev-video" src="video/rev4.mp4"></video>
+                        </div>
+                        <p class="slide__name js-video-name">Руслан</p>
+                        <a href="https://short.nervous.academy/E2mzY8" target="_blank" class="slide__link">
+                            <span class="link__instagram">...переглянути в</span>
+                            <img src="img/sections/reviews/instagram-logo.svg" alt="" width="13" height="13">
+                        </a>
+                    </div>
+                    <div class="slide slider__slide slide__fifth anim-box anim-delay-12">
+                        <div class="slide__user">
+                            <img src="img/sections/reviews/rev-oleksandr.png" alt="" class="user__avatar" height="63"
+                                width="63">
+                            <p class="user__name">Олександр</p>
+                        </div>
+                        <p class="slide__desc">Я хочу поділитися своїми позитивними враженнями від курсу навчання
+                            професії Media Buyer + AI. Я дуже задоволений тим, як курс
+                            організо<a href="https://short.nervous.academy/eRUUpa" target="_blank"
+                                class="slide__link_instagram"><span>...переглянути
+                                    в</span><img src="img/sections/reviews/instagram-logo.svg" alt="" width="14"
+                                    height="14"></a>
+                        </p>
+                    </div>
+                    <div class="slide slider__slide slide__sixth anim-box anim-delay-14">
+                        <div class="slide__user">
+                            <img src="img/sections/reviews/rev-nastya.jpg" alt="" class="user__avatar" height="63"
+                                width="63">
+                            <p class="user__name">Настя</p>
+                        </div>
+                        <p class="slide__desc">Цей курс перевершив всі мої очікування! Всі матеріали структуровані,
+                            доступні та зрозумілі, а ще, це не просто суха теорія, але й дуже багато практики.
+                            <br> Ментори<a href="https://short.nervous.academy/3NduKp" target="_blank"
+                                class="slide__link_telegram"><span>...переглянути
+                                    в</span><img src="img/sections/reviews/facebook-logo.svg" alt="" width="14"
+                                    height="14"></a>
+                        </p>
+                    </div>
+                </div>
+                <img src="./img/decoration-line.png" alt="decoration-line" class="meet__decoration-bottom decoration">
+            </div>
+        </section>
+        <section class="section pay" id="pay">
+            <picture class="section__pic">
+                <source srcset="img/sections/pay/bg.webp" media="(min-width: 1440px)">
+                <source srcset="img/sections/pay/bg-l.webp" media="(min-width: 1200px)">
+                <source srcset="img/sections/pay/bg-m.webp" media="(min-width: 768px)"><img class="section__pic-img"
+                    src="img/sections/pay/bg-s.webp" alt="">
+            </picture>
+            <div class="container">
+                <h2 class="pay__title anim-box anim-delay-1">Оплата</h2>
+                <p class="pay__subtitle anim-box anim-delay-3">
+                    * Після оплати курсу ми надамо тобі доступ до навчальної платформи на 4 місяці
+                </p>
+                <ul class="pay__list">
+                    <li class="pay__item anim-box anim-delay-5 anim-scroll">
+                        <p class="item__title">Запис курсу<span>₴ 1990</span></p>
+                        <p class="pay__part">₴ 332 /місяць</p>
+                        <ul class="item__list">
+                            <li class="item__item item__item_first">Відео курс</li>
+                            <li class="item__item">Бонусні модулі</li>
+                            <li class="item__item item__item_false">Q&A зустріч</li>
+                            <li class="item__item item__item_false">SPY cервіси, Tracker, Antidetect Browser</li>
+                            <li class="item__item item__item_false">Підтримка менторів</li>
+                            <li class="item__item item__item_false">Безкоштовний семестр за круті результати</li>
+                            <li class="item__item item__item_false">Поверення коштів, якщо ти потрапив до нас в команду
+                                як Медіабаєр!
+                            </li>
+                        </ul>
+                        <a href="https://pay.fondy.eu/s/LXxJ" class="item__pay_first">
+                            <img src="img/sections/pay/pay__foot.svg" alt="">
+                            Оплатити
+                        </a>
+                    </li>
+                    <li class="pay__item anim-box anim-delay-7 anim-scroll">
+                        <p class="item__title">Оптимальний<span>₴ 5 000</span></p>
+                        <p class="pay__part">₴ 834 /місяць</p>
+                        <ul class="item__list">
+                            <li class="item__item item__item_first">Відео курс</li>
+                            <li class="item__item">Бонусні модулі</li>
+                            <li class="item__item">Q&A зустріч</li>
+                            <li class="item__item item__item_true">SPY cервіси, Tracker, Antidetect Browser</li>
+                            <li class="item__item item__item_false">Підтримка менторів</li>
+                            <li class="item__item item__item_false">Безкоштовний семестр за круті результати</li>
+                            <li class="item__item item__item_false">Поверення коштів, якщо ти потрапив до нас в команду
+                                як Медіабаєр!
+                            </li>
+                        </ul>
+                        <a class="item__pay_second" href="https://pay.fondy.eu/s/LURcmzEQa9a9">
+                            Оплатити
+                        </a>
+                    </li>
+                    <li class="pay__item pay__item_active anim-box anim-delay-9 anim-scroll pay__item_active">
+                        <p class="item__title">Live курс<span>₴ 11 000</span></p>
+                        <p class="pay__part">₴ 1 834 /місяць</p>
+                        <ul class="item__list">
+                            <li class="item__item item__item_first">Відео курс</li>
+                            <li class="item__item">Бонусні модулі</li>
+                            <li class="item__item">Q&A зустріч</li>
+                            <li class="item__item item__item_true">SPY cервіси, Tracker, Antidetect Browser</li>
+                            <li class="item__item item__item_true">Підтримка менторів</li>
+                            <li class="item__item item__item_true">Безкоштовний семестр за круті результати</li>
+                            <li class="item__item item__item_true">Поверення коштів, якщо ти потрапив до нас в команду
+                                як Медіабаєр!
+                            </li>
+                        </ul>
+                        <a href="https://nervous.academy/?&utm_source=refferal&utm_medium=mbai-rec&utm_campaign=2potik"
+                            class="item__pay_second">
+                            Оплатити
+                        </a>
+                    </li>
+                </ul>
+                <div class="pay__info">
+                    <div>
+                        <p class="pay__name anim-box anim-delay-11">ФОП: Лебедєв Ярослав Володимирович</p>
+                        <p class="pay__phone anim-box anim-delay-13">Номер телефону: +380995667544</p>
+                        <p class="pay__email anim-box anim-delay-15">З усіх питань email:
+                            <a href="mailto:support@nervous.academy">support@nervous.academy</a>
+                        </p>
+                    </div>
+                    <div class="pay__pol">
+                        <a href="https://nervous.academy/privacy-policy" class="pay__policy anim-box anim-delay-17">
+                            Політика конфіденційності</a>
+                        <a href=" https://nervous.academy/dogovir-ofertu"
+                            class="pay__public anim-box anim-delay-19">Публічна оферта</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section free-workshop partners" id="partners">
+            <picture class="section__pic">
+                <source srcset="img/sections/partners/bg.webp" media="(min-width: 1440px)">
+                <source srcset="img/sections/partners/bg-l.webp" media="(min-width: 1200px)">
+                <source srcset="img/sections/partners/bg-m.webp" media="(min-width: 768px)"><img
+                    class="section__pic-img" src="img/sections/partners/bg-s.webp" alt="">
+            </picture>
+            <div class="container">
+                <header class="workshop__header">
+                    <div class="anim-text">
+                        <h2 class="title anim-text__wrap anim-delay-5 anim-scroll">Наші
+                            <mark class="color-mark">партнери</mark>
+                        </h2>
+                    </div>
+                </header>
+                <div class="box anim-box anim-delay-6 anim-scroll">
+                    <div class="anim-text">
+                        <p class="free-workshop__text anim-text__wrap anim-delay-7 anim-scroll">Наші постійні партнери,
+                            які постійно з нами співпрацюють. </p>
+                    </div>
+                </div>
+                <ul class="partners__list">
+                    <li class="partners__item anim-box anim-delay-8 anim-scroll">
+                        <a href="https://my.7leads.biz/user/register" class="partners__link" target="_blank">
+                            <img src="img/sections/partners/7leads-logo.svg" alt="7 leads logo" class="partners__image">
+                        </a>
+                    </li>
+                    <li class="partners__item anim-box anim-delay-10 anim-scroll">
+                        <a href="https://onecapital.com.ua" class="partners__link" target="_blank">
+                            <img src="img/sections/partners/one-capital-logo.svg" alt="one capital logo"
+                                class="partners__image">
+                        </a>
+                    </li>
+                    <li class="partners__item anim-box anim-delay-12 anim-scroll">
+                        <a href="https://keitaro.io/en/" class="partners__link" target="_blank">
+                            <img src="img/sections/partners/keitaro-logo.svg" alt="keitaro logo"
+                                class="partners__image">
+                        </a>
+                    </li>
+                    <li class="partners__item anim-box anim-delay-14 anim-scroll">
+                        <a href="https://anty.dolphin.ru.com/en/?utm_source=media&utm_medium=cpc&utm_campaign=nervous.academy&utm_content=logo_web"
+                            class="partners__link" target="_blank">
+                            <img src="img/sections/partners/dolphin-logo.svg" alt="dolphin logo"
+                                class="partners__image">
+                        </a>
+                    </li>
+                    <li class="partners__item anim-box anim-delay-16 anim-scroll">
+                        <a href="https://adheart.me/uk" class="partners__link" target="_blank">
+                            <img src="img/sections/partners/adme-logo.svg" alt="adme logo" class="partners__image">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section faq" id="faq">
+            <picture class="section__pic">
+                <source srcset="img/sections/faq/bg.webp" media="(min-width: 1440px)">
+                <source srcset="img/sections/faq/bg-l.webp" media="(min-width: 1200px)">
+                <source srcset="img/sections/faq/bg-m.webp" media="(min-width: 768px)"><img class="section__pic-img"
+                    src="img/sections/faq/bg-s.webp" alt="">
+            </picture>
+            <div class="container">
+                <img src="./img/decoration-line.png" alt="decoration-line" class="faq__decoration decoration">
+                <header class="faq__header">
+                    <div class="anim-text">
+                        <h2 class="title anim-text__wrap anim-delay-5 anim-scroll">FAQ</h2>
+                    </div>
+                </header>
+                <div class="anim-box anim-delay-6 anim-scroll">
+                    <div class="faq__box">
+                        <div class="faq__answer faqAnswer">
+                            <div class="anim-text">
+                                <h3 class="faq__answer-title answerTitle anim-text__wrap anim-delay-7 anim-scroll">Я не
+                                    впевнений у собі, бо немає досвіду та знань у професії. Чи є сенс іти на курс?</h3>
+                            </div>
+                            <div class="anim-text">
+                                <p class="faq__answer-desc answerDesc anim-text__wrap anim-delay-8 anim-scroll">Навчання
+                                    побудовано так, щоб ти зміг прошаритись у Affiliate Marketing з нуля та розібратися
+                                    у всіх темах і отримати свій перший прибуток від запуску реклами.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__accordion">
+                    <div class="accordion">
+                        <!-- item-->
+                        <div class="anim-box-left anim-delay-11 anim-scroll">
+                            <div class="accordion__item accordionItem is-show">
+                                <button class="accordion__btn accordionBtn"><span class="accordion__title"><span
+                                            class="accordionTitle">Я не впевнений у собі, бо немає досвіду та знань у
+                                            професії. Чи є сенс іти на курс?</span><i class="accordion__icon"><span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg></span><span>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1641 8.32611H14.8359C15.0598 8.32611 15.2735 8.37197 15.4771 8.46369C15.6807 8.55541 15.8588 8.67771 16.0114 8.83057C16.1641 8.98344 16.2812 9.16688 16.3626 9.38089C16.4542 9.58471 16.5 9.80382 16.5 10.0382C16.5 10.2726 16.4542 10.4917 16.3626 10.6955C16.2812 10.8892 16.1641 11.0573 16.0114 11.2C15.8588 11.3427 15.6807 11.4599 15.4771 11.5516C15.2735 11.6331 15.0598 11.6739 14.8359 11.6739H12.1641V14.3338C12.1641 14.5682 12.1183 14.7873 12.0267 14.9911C11.9453 15.1949 11.8282 15.3732 11.6756 15.5261C11.5331 15.6688 11.3601 15.786 11.1565 15.8777C10.9529 15.9592 10.7392 16 10.5153 16C10.2812 16 10.0573 15.9592 9.84351 15.8777C9.63995 15.786 9.46183 15.6688 9.30916 15.5261C9.15649 15.3732 9.03435 15.1949 8.94275 14.9911C8.86132 14.7873 8.82061 14.5682 8.82061 14.3338V11.6739H6.16412C5.93003 11.6739 5.7112 11.6331 5.50763 11.5516C5.31425 11.4599 5.14122 11.3427 4.98855 11.2C4.83588 11.0471 4.71374 10.8688 4.62214 10.665C4.54071 10.4611 4.5 10.242 4.5 10.0076C4.5 9.78344 4.54071 9.56943 4.62214 9.3656C4.71374 9.16178 4.83588 8.98344 4.98855 8.83057C5.14122 8.67771 5.31425 8.55541 5.50763 8.46369C5.7112 8.37197 5.93003 8.32611 6.16412 8.32611H8.82061V5.66624C8.82061 5.43185 8.86641 5.21274 8.95801 5.00892C9.04962 4.80509 9.17176 4.63185 9.32443 4.48917C9.4771 4.33631 9.65522 4.21911 9.85878 4.13758C10.0623 4.04586 10.2812 4 10.5153 4C10.7392 4 10.9529 4.04586 11.1565 4.13758C11.3601 4.21911 11.5331 4.33631 11.6756 4.48917C11.8282 4.63185 11.9453 4.80509 12.0267 5.00892C12.1183 5.21274 12.1641 5.43185 12.1641 5.66624V8.32611Z"
+                                                        fill="white"></path>
+                                                </svg></span></i></span></button>
+                                <div class="accordion__panel accordionPanel">
+                                    <p class="accordionDesc">Навчання побудовано так, щоб ти зміг прошаритись у
+                                        Affiliate Marketing з нуля та розібратися у всіх темах і отримати свій перший
+                                        прибуток від запуску реклами.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-->
+                        <div class="anim-box-right anim-delay-11 anim-scroll">
+                            <div class="accordion__item accordionItem">
+                                <button class="accordion__btn accordionBtn"><span class="accordion__title"><span
+                                            class="accordionTitle">Наскільки успішним буде результат після закінчення
+                                            навчання?</span><i class="accordion__icon"><span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg></span><span>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1641 8.32611H14.8359C15.0598 8.32611 15.2735 8.37197 15.4771 8.46369C15.6807 8.55541 15.8588 8.67771 16.0114 8.83057C16.1641 8.98344 16.2812 9.16688 16.3626 9.38089C16.4542 9.58471 16.5 9.80382 16.5 10.0382C16.5 10.2726 16.4542 10.4917 16.3626 10.6955C16.2812 10.8892 16.1641 11.0573 16.0114 11.2C15.8588 11.3427 15.6807 11.4599 15.4771 11.5516C15.2735 11.6331 15.0598 11.6739 14.8359 11.6739H12.1641V14.3338C12.1641 14.5682 12.1183 14.7873 12.0267 14.9911C11.9453 15.1949 11.8282 15.3732 11.6756 15.5261C11.5331 15.6688 11.3601 15.786 11.1565 15.8777C10.9529 15.9592 10.7392 16 10.5153 16C10.2812 16 10.0573 15.9592 9.84351 15.8777C9.63995 15.786 9.46183 15.6688 9.30916 15.5261C9.15649 15.3732 9.03435 15.1949 8.94275 14.9911C8.86132 14.7873 8.82061 14.5682 8.82061 14.3338V11.6739H6.16412C5.93003 11.6739 5.7112 11.6331 5.50763 11.5516C5.31425 11.4599 5.14122 11.3427 4.98855 11.2C4.83588 11.0471 4.71374 10.8688 4.62214 10.665C4.54071 10.4611 4.5 10.242 4.5 10.0076C4.5 9.78344 4.54071 9.56943 4.62214 9.3656C4.71374 9.16178 4.83588 8.98344 4.98855 8.83057C5.14122 8.67771 5.31425 8.55541 5.50763 8.46369C5.7112 8.37197 5.93003 8.32611 6.16412 8.32611H8.82061V5.66624C8.82061 5.43185 8.86641 5.21274 8.95801 5.00892C9.04962 4.80509 9.17176 4.63185 9.32443 4.48917C9.4771 4.33631 9.65522 4.21911 9.85878 4.13758C10.0623 4.04586 10.2812 4 10.5153 4C10.7392 4 10.9529 4.04586 11.1565 4.13758C11.3601 4.21911 11.5331 4.33631 11.6756 4.48917C11.8282 4.63185 11.9453 4.80509 12.0267 5.00892C12.1183 5.21274 12.1641 5.43185 12.1641 5.66624V8.32611Z"
+                                                        fill="white"></path>
+                                                </svg></span></i></span></button>
+                                <div class="accordion__panel accordionPanel">
+                                    <p class="accordionDesc">У тебе будуть всі інструменти для успішного запуску
+                                        рекламної кампанії. Нашою перевагою є актуальна інформація на нашій платформі.
+                                        Якщо ти будеш робити все, що ми говоримо, правильно виконувати всі завдання, то
+                                        результат тебе приємно здивує.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-->
+                        <div class="anim-box-left anim-delay-13 anim-scroll">
+                            <div class="accordion__item accordionItem">
+                                <button class="accordion__btn accordionBtn"><span class="accordion__title"><span
+                                            class="accordionTitle">Яка сума потрібна для старту?</span><i
+                                            class="accordion__icon"><span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg></span><span>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1641 8.32611H14.8359C15.0598 8.32611 15.2735 8.37197 15.4771 8.46369C15.6807 8.55541 15.8588 8.67771 16.0114 8.83057C16.1641 8.98344 16.2812 9.16688 16.3626 9.38089C16.4542 9.58471 16.5 9.80382 16.5 10.0382C16.5 10.2726 16.4542 10.4917 16.3626 10.6955C16.2812 10.8892 16.1641 11.0573 16.0114 11.2C15.8588 11.3427 15.6807 11.4599 15.4771 11.5516C15.2735 11.6331 15.0598 11.6739 14.8359 11.6739H12.1641V14.3338C12.1641 14.5682 12.1183 14.7873 12.0267 14.9911C11.9453 15.1949 11.8282 15.3732 11.6756 15.5261C11.5331 15.6688 11.3601 15.786 11.1565 15.8777C10.9529 15.9592 10.7392 16 10.5153 16C10.2812 16 10.0573 15.9592 9.84351 15.8777C9.63995 15.786 9.46183 15.6688 9.30916 15.5261C9.15649 15.3732 9.03435 15.1949 8.94275 14.9911C8.86132 14.7873 8.82061 14.5682 8.82061 14.3338V11.6739H6.16412C5.93003 11.6739 5.7112 11.6331 5.50763 11.5516C5.31425 11.4599 5.14122 11.3427 4.98855 11.2C4.83588 11.0471 4.71374 10.8688 4.62214 10.665C4.54071 10.4611 4.5 10.242 4.5 10.0076C4.5 9.78344 4.54071 9.56943 4.62214 9.3656C4.71374 9.16178 4.83588 8.98344 4.98855 8.83057C5.14122 8.67771 5.31425 8.55541 5.50763 8.46369C5.7112 8.37197 5.93003 8.32611 6.16412 8.32611H8.82061V5.66624C8.82061 5.43185 8.86641 5.21274 8.95801 5.00892C9.04962 4.80509 9.17176 4.63185 9.32443 4.48917C9.4771 4.33631 9.65522 4.21911 9.85878 4.13758C10.0623 4.04586 10.2812 4 10.5153 4C10.7392 4 10.9529 4.04586 11.1565 4.13758C11.3601 4.21911 11.5331 4.33631 11.6756 4.48917C11.8282 4.63185 11.9453 4.80509 12.0267 5.00892C12.1183 5.21274 12.1641 5.43185 12.1641 5.66624V8.32611Z"
+                                                        fill="white"></path>
+                                                </svg></span></i></span></button>
+                                <div class="accordion__panel accordionPanel">
+                                    <p class="accordionDesc">200$ — оптимальна цифра для комфортного старту, але на
+                                        невеликих обсягах результат можна отримати, маючи 50-100$.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-->
+                        <div class="anim-box-right anim-delay-13 anim-scroll">
+                            <div class="accordion__item accordionItem">
+                                <button class="accordion__btn accordionBtn"><span class="accordion__title"><span
+                                            class="accordionTitle">Як проходить навчання?</span><i
+                                            class="accordion__icon"><span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg></span><span>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1641 8.32611H14.8359C15.0598 8.32611 15.2735 8.37197 15.4771 8.46369C15.6807 8.55541 15.8588 8.67771 16.0114 8.83057C16.1641 8.98344 16.2812 9.16688 16.3626 9.38089C16.4542 9.58471 16.5 9.80382 16.5 10.0382C16.5 10.2726 16.4542 10.4917 16.3626 10.6955C16.2812 10.8892 16.1641 11.0573 16.0114 11.2C15.8588 11.3427 15.6807 11.4599 15.4771 11.5516C15.2735 11.6331 15.0598 11.6739 14.8359 11.6739H12.1641V14.3338C12.1641 14.5682 12.1183 14.7873 12.0267 14.9911C11.9453 15.1949 11.8282 15.3732 11.6756 15.5261C11.5331 15.6688 11.3601 15.786 11.1565 15.8777C10.9529 15.9592 10.7392 16 10.5153 16C10.2812 16 10.0573 15.9592 9.84351 15.8777C9.63995 15.786 9.46183 15.6688 9.30916 15.5261C9.15649 15.3732 9.03435 15.1949 8.94275 14.9911C8.86132 14.7873 8.82061 14.5682 8.82061 14.3338V11.6739H6.16412C5.93003 11.6739 5.7112 11.6331 5.50763 11.5516C5.31425 11.4599 5.14122 11.3427 4.98855 11.2C4.83588 11.0471 4.71374 10.8688 4.62214 10.665C4.54071 10.4611 4.5 10.242 4.5 10.0076C4.5 9.78344 4.54071 9.56943 4.62214 9.3656C4.71374 9.16178 4.83588 8.98344 4.98855 8.83057C5.14122 8.67771 5.31425 8.55541 5.50763 8.46369C5.7112 8.37197 5.93003 8.32611 6.16412 8.32611H8.82061V5.66624C8.82061 5.43185 8.86641 5.21274 8.95801 5.00892C9.04962 4.80509 9.17176 4.63185 9.32443 4.48917C9.4771 4.33631 9.65522 4.21911 9.85878 4.13758C10.0623 4.04586 10.2812 4 10.5153 4C10.7392 4 10.9529 4.04586 11.1565 4.13758C11.3601 4.21911 11.5331 4.33631 11.6756 4.48917C11.8282 4.63185 11.9453 4.80509 12.0267 5.00892C12.1183 5.21274 12.1641 5.43185 12.1641 5.66624V8.32611Z"
+                                                        fill="white"></path>
+                                                </svg></span></i></span></button>
+                                <div class="accordion__panel accordionPanel">
+                                    <p class="accordionDesc">Відразу після оплати ти отримуєш доступ до навчальної
+                                        платформи, перегляду відео, гайдів, доступ до тестів, домашніх завдань. Є записи
+                                        зустрічей запитання/відповідь. Після цього починаєш заливати рекламну компанію в
+                                        кабінети.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-->
+                        <div class="anim-box-left anim-delay-13 anim-scroll">
+                            <div class="accordion__item accordionItem">
+                                <button class="accordion__btn accordionBtn"><span class="accordion__title"><span
+                                            class="accordionTitle">Скільки часу треба приділяти навчанню, а потім і
+                                            роботі?</span><i class="accordion__icon"><span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg></span><span>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1641 8.32611H14.8359C15.0598 8.32611 15.2735 8.37197 15.4771 8.46369C15.6807 8.55541 15.8588 8.67771 16.0114 8.83057C16.1641 8.98344 16.2812 9.16688 16.3626 9.38089C16.4542 9.58471 16.5 9.80382 16.5 10.0382C16.5 10.2726 16.4542 10.4917 16.3626 10.6955C16.2812 10.8892 16.1641 11.0573 16.0114 11.2C15.8588 11.3427 15.6807 11.4599 15.4771 11.5516C15.2735 11.6331 15.0598 11.6739 14.8359 11.6739H12.1641V14.3338C12.1641 14.5682 12.1183 14.7873 12.0267 14.9911C11.9453 15.1949 11.8282 15.3732 11.6756 15.5261C11.5331 15.6688 11.3601 15.786 11.1565 15.8777C10.9529 15.9592 10.7392 16 10.5153 16C10.2812 16 10.0573 15.9592 9.84351 15.8777C9.63995 15.786 9.46183 15.6688 9.30916 15.5261C9.15649 15.3732 9.03435 15.1949 8.94275 14.9911C8.86132 14.7873 8.82061 14.5682 8.82061 14.3338V11.6739H6.16412C5.93003 11.6739 5.7112 11.6331 5.50763 11.5516C5.31425 11.4599 5.14122 11.3427 4.98855 11.2C4.83588 11.0471 4.71374 10.8688 4.62214 10.665C4.54071 10.4611 4.5 10.242 4.5 10.0076C4.5 9.78344 4.54071 9.56943 4.62214 9.3656C4.71374 9.16178 4.83588 8.98344 4.98855 8.83057C5.14122 8.67771 5.31425 8.55541 5.50763 8.46369C5.7112 8.37197 5.93003 8.32611 6.16412 8.32611H8.82061V5.66624C8.82061 5.43185 8.86641 5.21274 8.95801 5.00892C9.04962 4.80509 9.17176 4.63185 9.32443 4.48917C9.4771 4.33631 9.65522 4.21911 9.85878 4.13758C10.0623 4.04586 10.2812 4 10.5153 4C10.7392 4 10.9529 4.04586 11.1565 4.13758C11.3601 4.21911 11.5331 4.33631 11.6756 4.48917C11.8282 4.63185 11.9453 4.80509 12.0267 5.00892C12.1183 5.21274 12.1641 5.43185 12.1641 5.66624V8.32611Z"
+                                                        fill="white"></path>
+                                                </svg></span></i></span></button>
+                                <div class="accordion__panel accordionPanel">
+                                    <p class="accordionDesc">Спочатку 2-3 години на день, далі ти самостійно обираєш, чи
+                                        присвятити роботі з арбітражем більше часу і зробити основною зайнятістю, чи
+                                        поєднувати з іншою роботою.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-->
+                        <div class="anim-box-left anim-delay-13 anim-scroll">
+                            <div class="accordion__item accordionItem">
+                                <button class="accordion__btn accordionBtn"><span class="accordion__title"><span
+                                            class="accordionTitle">Скільки я буду заробляти освоївши професію?</span><i
+                                            class="accordion__icon"><span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg></span><span>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1641 8.32611H14.8359C15.0598 8.32611 15.2735 8.37197 15.4771 8.46369C15.6807 8.55541 15.8588 8.67771 16.0114 8.83057C16.1641 8.98344 16.2812 9.16688 16.3626 9.38089C16.4542 9.58471 16.5 9.80382 16.5 10.0382C16.5 10.2726 16.4542 10.4917 16.3626 10.6955C16.2812 10.8892 16.1641 11.0573 16.0114 11.2C15.8588 11.3427 15.6807 11.4599 15.4771 11.5516C15.2735 11.6331 15.0598 11.6739 14.8359 11.6739H12.1641V14.3338C12.1641 14.5682 12.1183 14.7873 12.0267 14.9911C11.9453 15.1949 11.8282 15.3732 11.6756 15.5261C11.5331 15.6688 11.3601 15.786 11.1565 15.8777C10.9529 15.9592 10.7392 16 10.5153 16C10.2812 16 10.0573 15.9592 9.84351 15.8777C9.63995 15.786 9.46183 15.6688 9.30916 15.5261C9.15649 15.3732 9.03435 15.1949 8.94275 14.9911C8.86132 14.7873 8.82061 14.5682 8.82061 14.3338V11.6739H6.16412C5.93003 11.6739 5.7112 11.6331 5.50763 11.5516C5.31425 11.4599 5.14122 11.3427 4.98855 11.2C4.83588 11.0471 4.71374 10.8688 4.62214 10.665C4.54071 10.4611 4.5 10.242 4.5 10.0076C4.5 9.78344 4.54071 9.56943 4.62214 9.3656C4.71374 9.16178 4.83588 8.98344 4.98855 8.83057C5.14122 8.67771 5.31425 8.55541 5.50763 8.46369C5.7112 8.37197 5.93003 8.32611 6.16412 8.32611H8.82061V5.66624C8.82061 5.43185 8.86641 5.21274 8.95801 5.00892C9.04962 4.80509 9.17176 4.63185 9.32443 4.48917C9.4771 4.33631 9.65522 4.21911 9.85878 4.13758C10.0623 4.04586 10.2812 4 10.5153 4C10.7392 4 10.9529 4.04586 11.1565 4.13758C11.3601 4.21911 11.5331 4.33631 11.6756 4.48917C11.8282 4.63185 11.9453 4.80509 12.0267 5.00892C12.1183 5.21274 12.1641 5.43185 12.1641 5.66624V8.32611Z"
+                                                        fill="white"></path>
+                                                </svg></span></i></span></button>
+                                <div class="accordion__panel accordionPanel">
+                                    <p class="accordionDesc">
+                                        У середньому, прибуток арбітражника стартує від $500 - 1 500 без досвіду, а з
+                                        досвідом $1 500 - 4 000 і може доходити до десятків тисяч. Велике значення має
+                                        час, який приділяєш роботі
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-->
+                        <div class="anim-box-left anim-delay-13 anim-scroll">
+                            <div class="accordion__item accordionItem">
+                                <button class="accordion__btn accordionBtn"><span class="accordion__title"><span
+                                            class="accordionTitle">Де подивитись політику конфіденційності? </span><i
+                                            class="accordion__icon"><span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg></span><span>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1641 8.32611H14.8359C15.0598 8.32611 15.2735 8.37197 15.4771 8.46369C15.6807 8.55541 15.8588 8.67771 16.0114 8.83057C16.1641 8.98344 16.2812 9.16688 16.3626 9.38089C16.4542 9.58471 16.5 9.80382 16.5 10.0382C16.5 10.2726 16.4542 10.4917 16.3626 10.6955C16.2812 10.8892 16.1641 11.0573 16.0114 11.2C15.8588 11.3427 15.6807 11.4599 15.4771 11.5516C15.2735 11.6331 15.0598 11.6739 14.8359 11.6739H12.1641V14.3338C12.1641 14.5682 12.1183 14.7873 12.0267 14.9911C11.9453 15.1949 11.8282 15.3732 11.6756 15.5261C11.5331 15.6688 11.3601 15.786 11.1565 15.8777C10.9529 15.9592 10.7392 16 10.5153 16C10.2812 16 10.0573 15.9592 9.84351 15.8777C9.63995 15.786 9.46183 15.6688 9.30916 15.5261C9.15649 15.3732 9.03435 15.1949 8.94275 14.9911C8.86132 14.7873 8.82061 14.5682 8.82061 14.3338V11.6739H6.16412C5.93003 11.6739 5.7112 11.6331 5.50763 11.5516C5.31425 11.4599 5.14122 11.3427 4.98855 11.2C4.83588 11.0471 4.71374 10.8688 4.62214 10.665C4.54071 10.4611 4.5 10.242 4.5 10.0076C4.5 9.78344 4.54071 9.56943 4.62214 9.3656C4.71374 9.16178 4.83588 8.98344 4.98855 8.83057C5.14122 8.67771 5.31425 8.55541 5.50763 8.46369C5.7112 8.37197 5.93003 8.32611 6.16412 8.32611H8.82061V5.66624C8.82061 5.43185 8.86641 5.21274 8.95801 5.00892C9.04962 4.80509 9.17176 4.63185 9.32443 4.48917C9.4771 4.33631 9.65522 4.21911 9.85878 4.13758C10.0623 4.04586 10.2812 4 10.5153 4C10.7392 4 10.9529 4.04586 11.1565 4.13758C11.3601 4.21911 11.5331 4.33631 11.6756 4.48917C11.8282 4.63185 11.9453 4.80509 12.0267 5.00892C12.1183 5.21274 12.1641 5.43185 12.1641 5.66624V8.32611Z"
+                                                        fill="white"></path>
+                                                </svg></span></i></span></button>
+                                <div class="accordion__panel accordionPanel">
+                                    <p class="accordionDesc">Політику конфіденційності можеш подивитися <a
+                                            class="accordion__policy-link" target="_blank"
+                                            href="https://nervous.academy/privacy-policy">тут</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-->
+                        <div class="anim-box-left anim-delay-13 anim-scroll">
+                            <div class="accordion__item accordionItem">
+                                <button class="accordion__btn accordionBtn"><span class="accordion__title"><span
+                                            class="accordionTitle">Де подивитись публічну оферту?</span><i
+                                            class="accordion__icon"><span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg></span><span>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.1641 8.32611H14.8359C15.0598 8.32611 15.2735 8.37197 15.4771 8.46369C15.6807 8.55541 15.8588 8.67771 16.0114 8.83057C16.1641 8.98344 16.2812 9.16688 16.3626 9.38089C16.4542 9.58471 16.5 9.80382 16.5 10.0382C16.5 10.2726 16.4542 10.4917 16.3626 10.6955C16.2812 10.8892 16.1641 11.0573 16.0114 11.2C15.8588 11.3427 15.6807 11.4599 15.4771 11.5516C15.2735 11.6331 15.0598 11.6739 14.8359 11.6739H12.1641V14.3338C12.1641 14.5682 12.1183 14.7873 12.0267 14.9911C11.9453 15.1949 11.8282 15.3732 11.6756 15.5261C11.5331 15.6688 11.3601 15.786 11.1565 15.8777C10.9529 15.9592 10.7392 16 10.5153 16C10.2812 16 10.0573 15.9592 9.84351 15.8777C9.63995 15.786 9.46183 15.6688 9.30916 15.5261C9.15649 15.3732 9.03435 15.1949 8.94275 14.9911C8.86132 14.7873 8.82061 14.5682 8.82061 14.3338V11.6739H6.16412C5.93003 11.6739 5.7112 11.6331 5.50763 11.5516C5.31425 11.4599 5.14122 11.3427 4.98855 11.2C4.83588 11.0471 4.71374 10.8688 4.62214 10.665C4.54071 10.4611 4.5 10.242 4.5 10.0076C4.5 9.78344 4.54071 9.56943 4.62214 9.3656C4.71374 9.16178 4.83588 8.98344 4.98855 8.83057C5.14122 8.67771 5.31425 8.55541 5.50763 8.46369C5.7112 8.37197 5.93003 8.32611 6.16412 8.32611H8.82061V5.66624C8.82061 5.43185 8.86641 5.21274 8.95801 5.00892C9.04962 4.80509 9.17176 4.63185 9.32443 4.48917C9.4771 4.33631 9.65522 4.21911 9.85878 4.13758C10.0623 4.04586 10.2812 4 10.5153 4C10.7392 4 10.9529 4.04586 11.1565 4.13758C11.3601 4.21911 11.5331 4.33631 11.6756 4.48917C11.8282 4.63185 11.9453 4.80509 12.0267 5.00892C12.1183 5.21274 12.1641 5.43185 12.1641 5.66624V8.32611Z"
+                                                        fill="white"></path>
+                                                </svg></span></i></span></button>
+                                <div class="accordion__panel accordionPanel">
+                                    <p class="accordionDesc">Публічну оферту можеш подивитися <a
+                                            class="accordion__offer-link" target="_blank"
+                                            href="https://nervous.academy/dogovir-ofertu">тут</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <p class="footer__text"><span>© Nervous Academy </span><span id="currentYear">2023</span></p>
+    </footer>
+    <div class="overlay js-overlay">
+        <div class="form__modal js-modal" id="installment">
+            <button class="form__close js-close-modal">
+                <img src="img/sections/form/close.svg" alt="close-icon">
+            </button>
+            <h2 class="form__title">Хочу отримати розстрочку від школи</h2>
+            <p class="form__desc">Заповняй форму нижче і ми з тобою обов'язково зв'яжемося</p>
+            <!-- js-form -->
+            <form class="form__block js-form" data-email="info@nervous.academy"
+                action="https://script.google.com/macros/s/AKfycbwAiSnLEqmWdxi52VbHtdT6ojKYTPxmJMwzgOU4JAGTGTUlz8MoF5ceQSRxeW2zRETB/exec"
+                method="POST">
+                <div class="form__top">
+                    <label class="form__label">
+                        <span>Твоє Ім’я</span>
+                        <input type="text" name="name" class="form__input js-form-input" required placeholder="Віктор">
+                    </label>
+                    <label class="form__label">
+                        <span>Номер телефону</span>
+                        <input type="number" maxlength="15" name="phone" class="form__input js-form-input" required
+                            placeholder="0992673428">
+                    </label>
+                </div>
+                <label class="form__label">
+                    <span>Твій Нікнейм у Телеграм</span>
+                    <input type="text" name="username" class="form__input js-form-input" required
+                        placeholder="@victor_dubovsky">
+                </label>
+                <button type="submit" class="form__button js-form-submit">
+                    Надіслати свої дані
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- script's-->
+    <script src="js/scroll-to-id.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/reviews.js"></script>
+    <!-- <script src="js/modal.js"></script> -->
+</body>
+
+</html>
+<!-- AKfycbysx_zB_XTvOXHKmFKoDwbd-CogNT6Ico0zyFMT-fE7LiNXdJTW1UTqdzSurpqLmXbdHg -->
+<!-- https://script.google.com/macros/s/AKfycbysx_zB_XTvOXHKmFKoDwbd-CogNT6Ico0zyFMT-fE7LiNXdJTW1UTqdzSurpqLmXbdHg/exec -->

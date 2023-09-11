@@ -1,0 +1,7 @@
+{
+  "name": "My extension",
+  "permissions": [
+    "http://*.google.com/",
+    "https://script.google.com/macros/s/AKfycbwAiSnLEqmWdxi52VbHtdT6ojKYTPxmJMwzgOU4JAGTGTUlz8MoF5ceQSRxeW2zRETB/exec"
+  ],
+}
