@@ -3457,6 +3457,40 @@ body.container-scroll .menu__nav {
     background-image: radial-gradient(183.81% 554.33% at 136.35% 293.94%, #1D1D1D 0%, rgba(0, 0, 0, 0.1) 0.01%, rgba(29, 29, 29, 0.87) 80.13%);
 }
 
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px 20px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+    width: 886px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.message.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.message__text {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.message__text b {
+    font-weight: bold;
+}
+
 .form__modal {
     transition-property: backdrop-filter;
     position: absolute;
@@ -3469,6 +3503,14 @@ body.container-scroll .menu__nav {
     padding: 30px;
     z-index: 100;
     width: 886px;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form__modal.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 @media screen and (max-width:1200px) {
@@ -3479,7 +3521,7 @@ body.container-scroll .menu__nav {
 
 @media screen and (max-width:767px) {
     .form__modal {
-        width: 90%; 
+        width: 90%;
         padding: 15px 30px;
     }
 }
@@ -3519,7 +3561,7 @@ body.container-scroll .menu__nav {
 @media screen and (max-width:767px) {
     .form__desc {
         font-size: 12px;
-    }   
+    }
 }
 
 .form__top {
@@ -3538,7 +3580,7 @@ body.container-scroll .menu__nav {
     .form__top {
         gap: 15px;
         margin-bottom: 15px;
-    }   
+    }
 }
 
 .form__label {
@@ -3597,7 +3639,7 @@ body.container-scroll .menu__nav {
 @media screen and (max-width:767px) {
     .form__button {
         margin-top: 0;
-    }   
+    }
 }
 
 .form__button_active {
