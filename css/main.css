@@ -3477,6 +3477,18 @@ body.container-scroll .menu__nav {
     visibility: hidden;
 }
 
+@media screen and (max-width:1200px) {
+    .message {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .message {
+        width: 320px;
+    }
+}
+
 .message.active {
     opacity: 1;
     visibility: visible;
@@ -3485,6 +3497,7 @@ body.container-scroll .menu__nav {
 .message__text {
     font-size: 14px;
     line-height: 1.7;
+    text-align: center;
 }
 
 .message__text b {

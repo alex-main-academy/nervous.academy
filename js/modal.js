@@ -2,7 +2,7 @@ const openModalButton = document.querySelector(".js-open-modal");
 const closeModalButton = document.querySelector(".js-close-modal");
 const modal = document.querySelector(".js-modal");
 const overlay = document.querySelector(".js-overlay");
-const message = document.querySelector('.js-message');
+const message = document.querySelector(".js-message");
 
 const handleOpenModal = () => {
     overlay.style.cssText = `
@@ -10,7 +10,7 @@ const handleOpenModal = () => {
         visibility: visible;
     `;
 
-    modal.classList.add('active');
+    modal.classList.add("active");
 
     // document.body.style.overflowY = "hidden";
 };
@@ -21,7 +21,7 @@ const handleCloseModal = () => {
         visibility: hidden;
     `;
 
-    modal.classList.remove('active')
+    modal.classList.remove("active");
     // document.body.style.overflowY = "auto";
 };
 
@@ -50,18 +50,29 @@ form.addEventListener("submit", (event) => {
 
     const DATA = { name, surname, email, phone };
 
-    console.log(DATA)
+    console.log(DATA);
 
     const options = {
         method: "POST",
         headers: {
-            'Content-Type': 'application/json'
+            "Content-Type": "application/json",
         },
         body: JSON.stringify(DATA),
     };
 
-    modal.classList.remove('active');
-    message.classList.add('active');
+    modal.classList.remove("active");
+    message.classList.add("active");
+
+    const messageSeconds = document.querySelector(".js-message-seconds");
+    let count = 5;
+
+    setInterval(() => {
+        if (count === 0) {
+            return;
+        } else {
+            messageSeconds.innerHTML = count -= 1;
+        }
+    }, 1000);
 
     fetch("https://crm.7leads.xyz/api/redirect/academy", options)
         .then((response) => {
@@ -72,8 +83,9 @@ form.addEventListener("submit", (event) => {
         })
         .then((data) => {
             setTimeout(() => {
-                window.location.href = "https://edu.nervous.academy/courses/media-buyer-ai-tovarna-vertikal-2-potik-IrT/welcome-video";
-            }, 5000)
+                window.location.href =
+                    "https://edu.nervous.academy/courses/media-buyer-ai-tovarna-vertikal-2-potik-IrT/welcome-video";
+            }, 5000);
         })
         .catch((error) => {
             console.error("Произошла ошибка:", error);
@@ -86,7 +98,9 @@ formInputArray.forEach((elem) => {
             formInputArray[0].value !== "" &&
             formInputArray[1].value !== "" &&
             formInputArray[2].value !== "" &&
-            formInputArray[3].value !== ""
+            formInputArray[3].value !== "" &&
+            formInputArray[3].value.length <= 13 &&
+            formInputArray[3].value.length >= 7
         ) {
             formSubmitButton.classList.add("form__button_active");
         } else {
